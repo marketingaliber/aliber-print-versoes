@@ -1,0 +1,9 @@
+version: 1.3.1
+files:
+  - url: AliberPrint-Instalador.exe
+    sha512: 27EDkn9o1EWr2Hds+wHvDHFrL4dt8UzlgwBW8q/N090kBiIPdoLaNcY52DhLjAQF2m2C45K1iIxv9USmYqRKBg==
+    size: 81876522
+    isAdminRightsRequired: true
+path: AliberPrint-Instalador.exe
+sha512: 27EDkn9o1EWr2Hds+wHvDHFrL4dt8UzlgwBW8q/N090kBiIPdoLaNcY52DhLjAQF2m2C45K1iIxv9USmYqRKBg==
+releaseDate: '2026-10-13T14:50:06.771Z'
