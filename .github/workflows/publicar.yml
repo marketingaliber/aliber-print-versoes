@@ -37,9 +37,11 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          TITULO="Aliber Print ${{ inputs.versao }}"
+          if [ -s TITULO.txt ]; then TITULO="$(head -n1 TITULO.txt)"; fi
           gh release create "v${{ inputs.versao }}" \
             --repo "${{ github.repository }}" --target main \
-            --title "Aliber Print ${{ inputs.versao }}" --notes-file NOTAS.md \
+            --title "$TITULO" --notes-file NOTAS.md \
             AliberPrint-Instalador.exe AliberPrint-Instalador.exe.blockmap latest.yml \
             "AliberPrint-Atualizacao-${{ inputs.versao }}.exe"
 
